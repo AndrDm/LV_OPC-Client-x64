@@ -66,9 +66,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-<PropertyGroup>
-<MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
-</PropertyGroup>
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -247,20 +247,28 @@
     <TargetName>LVOPC</TargetName>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>$(Platform)/$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>LVOPC</TargetName>
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>$(Platform)/$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>LVOPC</TargetName>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>$(Platform)/$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>LVOPC</TargetName>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>$(Platform)/$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -560,6 +568,7 @@
       <AdditionalDependencies>OPCClientToolKit64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies);</AdditionalDependencies>
       <AdditionalLibraryDirectories>../OPCClientToolKit/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ShowProgress>NotSet</ShowProgress>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>

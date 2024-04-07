@@ -142,14 +142,14 @@ void main(void)
     for (unsigned i = 0; i < localServerList.size(); ++i)
     {
         printf("%d: '%ws'\n", i, localServerList[i].c_str());
-        if (localServerList[i] == L"Matrikon.OPC.Simulation.1")
+        if (localServerList[i] == L"National Instruments.Variable Engine.1")
         {
             server_id = i;
         }
     } // for
 
     // connect to OPC
-    printf("\nselect server ID or <ENTER> for Matrikon:\n");
+    printf("\nselect server ID or <ENTER> for National Instruments Variable Engine:\n");
     gets_s(c_string);
     if (strlen(c_string))
     {
@@ -184,7 +184,7 @@ void main(void)
     COPCGroup *demoGroup = opcServer->makeGroup(L"DemoGroup", true, 1000, refreshRate, 0.0);
 
     // make a single item
-    std::wstring itemName = opcItemNames[5];
+    std::wstring itemName = opcItemNames[1];
     COPCItem *readWritableItem = demoGroup->addItem(itemName, true);
 
     // make several items
@@ -192,8 +192,8 @@ void main(void)
     std::vector<COPCItem *> itemsCreated;
     std::vector<HRESULT> errors;
 
-    itemNames.push_back(opcItemNames[21]); // 15 -> Bucket Brigade.UInt2
-    itemNames.push_back(opcItemNames[22]); // 16 -> Bucket Brigade.UInt4
+    itemNames.push_back(opcItemNames[1]); // 1 -> INT
+    itemNames.push_back(opcItemNames[2]); // 2 -> SGL
     if (demoGroup->addItems(itemNames, itemsCreated, errors, true) != 0)
     {
         printf("add items to group FAILED\n");
@@ -205,8 +205,7 @@ void main(void)
     printf("supported properties for '%ws'\n", readWritableItem->getName().c_str());
     for (unsigned i = 0; i < propDesc.size(); ++i)
     {
-        printf("%3d: ID = %u, description = '%ws', type = %d\n", i, propDesc[i].id, propDesc[i].desc.c_str(),
-               propDesc[i].type);
+        printf("%3d: ID = %u, desc. = '%ws', type = %d\n", i, propDesc[i].id, propDesc[i].desc.c_str(), propDesc[i].type);
     }
 
     CAutoPtrArray<SPropertyValue> propVals;
@@ -223,6 +222,10 @@ void main(void)
 
             switch (propDesc[i].type)
             {
+            case VT_R8:
+                printf("%f\n", propVals[i]->value.dblVal);
+                break;
+
             case VT_R4:
                 printf("%f\n", propVals[i]->value.fltVal);
                 break;

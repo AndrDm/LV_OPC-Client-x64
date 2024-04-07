@@ -7,17 +7,19 @@
 #ifdef LVOPC_EXPORTS
 #define LVOPC_API __declspec(dllexport)
 #else
-//#define LVOPC_API __declspec(dllimport)
+#define LVOPC_API __declspec(dllimport)
 #endif
 
-// This class is exported from the dll
-class LVOPC_API CLVOPC {
-public:
-	CLVOPC(void);
-	// TODO: add your methods here.
-};
-
-extern LVOPC_API int nLVOPC;
-
-LVOPC_API int fnLVOPC(char* buf);
+LVOPC_API int fnGetServers(char* address, char* list);
 LVOPC_API int fnConnect(int server_id);
+LVOPC_API int fnStatus(char* LV_status);
+LVOPC_API int fnWaitRunning();
+LVOPC_API int fnBrowseServer(char* LV_items);
+LVOPC_API int fnCreateDemoGroup();
+
+LVOPC_API int fnReadItemI32(int idx);
+LVOPC_API float fnReadItemSGL(int idx);
+LVOPC_API double fnReadItemDBL(int idx);
+LVOPC_API int fnWriteItemI32(int idx, int val);
+LVOPC_API int fnWriteItemSGL(int idx, float val);
+LVOPC_API int fnWriteItemDBL(int idx, double val);
