@@ -1,6 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="24008000">
+<Project Type="Project" LVVersion="18008000">
+	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">18.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{6E409F80-E75F-4F20-A0BD-1A1A6F7EFEF4}" Type="Ref">/My Computer/Variables.lvlib/INT</Property>
 	<Property Name="varPersistentID:{871217CF-BB70-4FE9-ACF4-10D46F3C3487}" Type="Ref">/My Computer/Variables.lvlib/SGL</Property>
 	<Property Name="varPersistentID:{F267BDDD-449A-4387-B164-60B5C6DE795B}" Type="Ref">/My Computer/Variables.lvlib/DBL</Property>
@@ -20,9 +23,9 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="LV_OPC.lvlib" Type="Library" URL="../LV_OPC_Test/OPC.DLL/LV_OPC.lvlib"/>
-		<Item Name="LV_OPC_NET.lvlib" Type="Library" URL="../../../Users/Andrey/Desktop/LV_OPC-Client-x64/LV_OPC_Test/OPC.NET/LV_OPC_NET.lvlib"/>
+		<Item Name="LV_OPC_NET.lvlib" Type="Library" URL="../LV_OPC_Test/OPC.NET/LV_OPC_NET.lvlib"/>
 		<Item Name="LV_OPC_Test.vi" Type="VI" URL="../LV_OPC_Test/LV_OPC_Test.vi"/>
-		<Item Name="LV_OPC_Test_Net.vi" Type="VI" URL="../../../Users/Andrey/Desktop/LV_OPC-Client-x64/LV_OPC_Test/LV_OPC_Test_Net.vi"/>
+		<Item Name="LV_OPC_Test_Net.vi" Type="VI" URL="../LV_OPC_Test/LV_OPC_Test_Net.vi"/>
 		<Item Name="Variables.lvlib" Type="Library" URL="../LV_OPC_Test/Variables.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -67,8 +70,8 @@
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="OpcNetApi.Com.dll" Type="Document" URL="../../../Users/Andrey/Desktop/LV_OPC-Client-x64/LV_OPC_Test/OPC.NET/OpcNetApi.Com.dll"/>
-			<Item Name="OpcNetApi.dll" Type="Document" URL="../../../Users/Andrey/Desktop/LV_OPC-Client-x64/LV_OPC_Test/OPC.NET/OpcNetApi.dll"/>
+			<Item Name="OpcNetApi.Com.dll" Type="Document" URL="../LV_OPC_Test/OPC.NET/OpcNetApi.Com.dll"/>
+			<Item Name="OpcNetApi.dll" Type="Document" URL="../LV_OPC_Test/OPC.NET/OpcNetApi.dll"/>
 			<Item Name="System.Xml" Type="Document" URL="System.Xml">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
