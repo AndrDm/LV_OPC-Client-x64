@@ -429,6 +429,7 @@
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <OmitFramePointers />
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild />
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -472,6 +473,7 @@
       <ConformanceMode>Default</ConformanceMode>
       <AdditionalIncludeDirectories>..\OPCClientToolKit\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader />
+      <MinimalRebuild />
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -483,7 +485,6 @@
       <AdditionalLibraryDirectories>../OPCClientToolKit/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration />
       <ImportLibrary />
-      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
@@ -559,6 +560,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <ExceptionHandling>false</ExceptionHandling>
       <AdditionalOptions>/D_ITERATOR_DEBUG_LEVEL=0 %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild />
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -568,7 +570,6 @@
       <AdditionalDependencies>OPCClientToolKit64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies);</AdditionalDependencies>
       <AdditionalLibraryDirectories>../OPCClientToolKit/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ShowProgress>NotSet</ShowProgress>
-      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>

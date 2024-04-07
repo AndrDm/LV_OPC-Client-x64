@@ -18,9 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-<PropertyGroup>
-<MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
-</PropertyGroup>
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
+  </PropertyGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D8297ACF-C66B-4EC2-8837-C5A4308A63D6}</ProjectGuid>
     <RootNamespace>OPCClientDemo</RootNamespace>
@@ -102,7 +102,8 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\OPCClientToolKit\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -129,7 +130,8 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\OPCClientToolKit\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader>
@@ -156,6 +158,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild />
     </ClCompile>
     <Link>
       <AdditionalDependencies>OPCClientToolKit32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -180,6 +183,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild />
     </ClCompile>
     <Link>
       <AdditionalDependencies>OPCClientToolKit64.lib;%(AdditionalDependencies)</AdditionalDependencies>
