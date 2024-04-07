@@ -31,7 +31,8 @@ Boston, MA  02111-1307, USA.
 #ifdef OPCDACLIENT_LIBRARY
 #define OPCDACLIENT_API __declspec(dllexport)
 #else
-#define OPCDACLIENT_API __declspec(dllimport)
+//#define OPCDACLIENT_API __declspec(dllimport)
+#define OPCDACLIENT_API 
 #endif
 #else
 #define OPCDACLIENT_API

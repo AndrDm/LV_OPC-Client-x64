@@ -133,6 +133,8 @@ COPCServer *CRemoteHost::connectDAServer(const std::wstring &serverProgIDOrClsID
 {
     CLSID clsid = {0, 0, 0, {0}};
 
+    printf("Attempt to connect\n");
+
     if (serverProgIDOrClsID[0] == '{')
     {
         LPCOLESTR strClsId = serverProgIDOrClsID.c_str();

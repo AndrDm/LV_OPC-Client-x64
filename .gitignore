@@ -1,12 +1,71 @@
-OPCClientDemo/Win32/
-OPCClientToolKit/Win32/
-OPCPerformance/Win32/
-OPCClientDemo/x64/
-OPCClientToolKit/x64/
-LocalSyncWrapper/x64/
+# OPCClientDemo/Win32/
+# OPCClientToolKit/Win32/
+# OPCPerformance/Win32/
+# OPCClientDemo/x64/
+# OPCClientToolKit/x64/
+# LocalSyncWrapper/x64/
+# x64/Debug/
+
+# Visual Studio
+
+# User-specific files
+*.rsuser
+*.suo
 *.user
-*.ipch
-x64/Debug/
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+STL/
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
 *.sdf
 *.opensdf
-*.suo
+*.pch
+*.ipch
+*.db
+*.obj
+*.iobj
+*.pdb
+*.ipdb
+*.idb
+*.log
+*.tlog
+*.vsidx
+*.filters
+*.recipe
+*FileListAbsolute.txt
+
+# LabVIEW
+*.aliases
+*.lvlps

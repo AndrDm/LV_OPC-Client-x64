@@ -158,7 +158,7 @@ void main(void)
     std::wstring serverName = localServerList[server_id];
     printf("server name: '%ws'\n", serverName.c_str());
     COPCServer *opcServer = host->connectDAServer(serverName);
-
+    printf("server connect: '%ws'\n", serverName.c_str());
     // check server status
     ServerStatus status = {0};
     const char *serverStateMsg[] = {"unknown", "running", "failed", "co-config", "suspended", "test", "comm-fault"};

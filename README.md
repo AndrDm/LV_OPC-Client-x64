@@ -1,7 +1,11 @@
 ## Description
 
+* Originally forked from [edimetia3d/OPC-Client-X64](https://github.com/edimetia3d/OPC-Client-X64)
 * An object oriented OPC DA Client SDK/ToolKit written in C++, Both X86/X64 supported, implementing the OPC DA
   specification version 2.05A
+* New Features (Compare with the original fork)
+    * Build with Visual Studio 2022.
+    * LabVIEW Support added.
 * New Features (Compare with the original version)
     * Build with x64 project.
     * Build with MFC.
@@ -62,13 +66,13 @@ wrong, you may check release 0.4.1 as a backup.
           // sync write and sync read
           client->WriteUint16("Bucket Brigade.UInt2", 998);
           std::cout << client->ReadUint16("Bucket Brigade.UInt2");
-
+    
           // disconnect and stop
           client->DisConnect();
           client->Stop();
           delete client;
       }
-
+    
   ```
     * You could rewrite or override the member function `IsOPCConnectedPLC()` to make connection more safety
     * You could rewrite or override the member function `ItemNameFilter(std::string)` to avoid adding useless items
