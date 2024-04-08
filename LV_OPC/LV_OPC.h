@@ -5,7 +5,7 @@
 // LVOPC_API functions as being imported from a DLL, whereas this DLL sees symbols
 // defined with this macro as being exported.
 #ifdef LVOPC_EXPORTS
-#define LVOPC_API __declspec(dllexport)
+#define LVOPC_API extern "C" __declspec(dllexport) 
 #else
 #define LVOPC_API __declspec(dllimport)
 #endif

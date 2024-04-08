@@ -5,6 +5,7 @@ It is just feasibility study experiment as possible replacement for DataSocket (
 ![](assets/SnippetDLL.png)
 
 * Not thread-safe!
+* No Timeouts!
 * Exceptions are not handled!
 * The only sync write/read for singles floats and doubles was implemented.
 

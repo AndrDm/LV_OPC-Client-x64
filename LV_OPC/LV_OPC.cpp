@@ -26,6 +26,7 @@ std::vector<std::wstring> opcItemNames;
 std::vector<COPCItem*> itemsCreated;
 std::vector<HRESULT> errors;
 int NI_server_id = -1;
+bool Connected = FALSE;
 
 LVOPC_API int fnGetServers(char* address, char* list)
 {
@@ -57,8 +58,16 @@ LVOPC_API int fnConnect(int server_id)
 {
     std::wstring serverName = localServerList[server_id];
     opcServer = host->connectDAServer(serverName);
+    if (opcServer) Connected = TRUE;
     if (opcServer) return 0; else return -1;
 }
+
+LVOPC_API void fnDisconnect(int server_id)
+{
+    Connected = FALSE;
+    host->~COPCHost();
+}
+
 
 LVOPC_API int fnStatus(char* LV_status)
 {
