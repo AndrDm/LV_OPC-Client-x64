@@ -22,7 +22,7 @@ It is just feasibility study experiment as possible replacement for DataSocket (
     * Build with x64 project.
     * Build with MFC.
     * Multithread supported.
-    * Connect to server with CLSID.(Hasn't tested)
+    * Connect to server with CLSID (Hasn't tested).
 
 ## Notes
 
