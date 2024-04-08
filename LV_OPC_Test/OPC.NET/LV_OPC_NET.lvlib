@@ -7,6 +7,7 @@
 	<Item Name="Connect to Server.vi" Type="VI" URL="../Connect to Server.vi"/>
 	<Item Name="Disconnect.vi" Type="VI" URL="../Disconnect.vi"/>
 	<Item Name="Name to Item.vi" Type="VI" URL="../Name to Item.vi"/>
+	<Item Name="Read Item (SGL).vi" Type="VI" URL="../Read Item (SGL).vi"/>
 	<Item Name="Read Item.vi" Type="VI" URL="../Read Item.vi"/>
 	<Item Name="Server Properties.vi" Type="VI" URL="../Server Properties.vi"/>
 	<Item Name="Server Status.vi" Type="VI" URL="../Server Status.vi"/>

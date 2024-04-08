@@ -1,11 +1,22 @@
+# OPC DA Client SDK for LabVIEW x64
+
+It is just feasibility study experiment as possible replacement for DataSocket (which is not supported in x64), but not intended for production (yet). May be useful for someone else as "starting point".
+
+![](assets/SnippetDLL.png)
+
+* Not thread-safe!
+* Exceptions are not handled!
+* The only sync write/read for singles floats and doubles was implemented.
+
 ## Description
 
 * Originally forked from [edimetia3d/OPC-Client-X64](https://github.com/edimetia3d/OPC-Client-X64)
 * An object oriented OPC DA Client SDK/ToolKit written in C++, Both X86/X64 supported, implementing the OPC DA
   specification version 2.05A
-* New Features (Compare with the original fork)
+* New Features (Compared to the original fork)
     * Build with Visual Studio 2022.
-    * LabVIEW Support added.
+    * Minimal LabVIEW support added (tested with LabVIEW 2024).
+## Original Description
 * New Features (Compare with the original version)
     * Build with x64 project.
     * Build with MFC.
